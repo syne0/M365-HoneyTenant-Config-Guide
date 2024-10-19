@@ -160,6 +160,15 @@ I personally don't do this since I like seeing what threat actors do with OAuth 
 #### Restrict Access to Azure and Other Sensitive Resources
 I suggest restricting access to Azure, and perhaps Graph PowerShell, as there is a good amount of shenanigans they can get up to. You'll need to do this via Conditional Access Policies or other methods, such as the ones [detailed here for Graph PowerShell](https://o365reports.com/2024/04/16/restrict-user-access-to-azure-ad-powershell-and-ms-graph-explorer/) and [here for blocking various Azure resources](https://ashishmgupta.github.io/blog/site/O365SecurityImplementation/site/BlockMiscAzureServices/).
 
+## Other Considerations
+### How to Get a Bite
+Now that you have a HoneyTenant all set up, you need to bait the accounts and get a threat actor onto your HoneyUser account(s). I've done this a few ways, and you can choose to do it how you please.
+1) Obtain phishing emails from Quarantine or another internal source.
+2) Locate phishing sites via [Phishing Catcher](https://phish.report/blog/phishing-catcher) or other projects. 
+3) Use urlscan.io to threat hunt for phishing pages, [as detailed in this post](https://phish.report/blog/urlscanio-threat-hunting). 
+4) In a VM, save the credentials in Chrome or Edge stored passwords, and then execute infostealing malware in the VM.
+5) Sell the credentials on initial access broker sites.
+
 ## Enhancing Realism
 This is the biggest challenge I've had with my HoneyTenant. The more realistic your HoneyTenant, the more realistic the activity you see is going to be. But, realism in the HoneyTenant isn't easy. Using a prefilled Dev tenant will create you some groups and such, but it's obvious to anyone that pokes around that the tenant is basically empty. If you want to improve realism, you'll need to plan it out and make it a bit of a project. 
 
