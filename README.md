@@ -1,5 +1,6 @@
 # M365-HoneyTenant-Config-Guide
 ![alt text](res/honeytenantlogofulltrans.png)
+Jump to: [Getting Started](https://github.com/syne0/M365-HoneyTenant-Config-Guide?tab=readme-ov-file#getting-started) | [Essential Settings](https://github.com/syne0/M365-HoneyTenant-Config-Guide?tab=readme-ov-file#essential-settings) | [Optional Settings](https://github.com/syne0/M365-HoneyTenant-Config-Guide?tab=readme-ov-file#optional-settings) | [Other Considerations](https://github.com/syne0/M365-HoneyTenant-Config-Guide?tab=readme-ov-file#other-considerations)
 ## Purpose
 The purpose of this guide is to detail some recommendations and best practice for configurations when setting up a Microsoft 365 tenant as a honeypot. This is different from the concept of a honeytoken or other early-warning type setup within your primary tenant. The HoneyTenant is intended to be used for a deeper study of threat actor behavior, primarily for threat actor activity post-phish or other credential leak.
 
