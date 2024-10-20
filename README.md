@@ -16,6 +16,9 @@ HoneyTenant: A Microsoft365 tenant created for the sole purpose of researching m
 
 HoneyUser: A Microsoft365 user account created which you will give a malicious actor access to for research purposes.
 
+## Contributions & Feedback
+Contributions and feedback are welcome & appreciated! You can contribute via PRs, Issues, or Discussions. Feedback is welcome via Discussions or Issues as well.
+
 ## Getting Started
 ### Planning
 You'll need a few things to make your honeytenant work that require some thought:
