@@ -17,7 +17,7 @@ HoneyTenant: A Microsoft365 tenant created for the sole purpose of researching m
 HoneyUser: A Microsoft365 user account created which you will give a malicious actor access to for research purposes.
 
 ## Contributions & Feedback
-Contributions and feedback are welcome & appreciated! You can contribute via PRs, Issues, or Discussions. Feedback is welcome via Discussions or Issues as well.
+Contributions and feedback are welcome & appreciated! Feel free to open a PR or leave contributions/feedback via issues or discussions.
 
 ## Getting Started
 ### Planning
@@ -31,9 +31,9 @@ You'll need a few things to make your honeytenant work that require some thought
 Once you have your company, domain, and users, you are ready to create your tenant.
 
 ### Provisioning Tenant
-There are many ways you can obtain a tenant, it doesn't matter what you choose at the end of the day. If you can access the [Microsoft 365 developer program](https://learn.microsoft.com/en-us/office/developer-program/microsoft-365-developer-program-get-started) do that, otherwise, budget for a licence that contains Entra ID Premium P1 as a feature, at the very least. Obviously using E5 licencing is preferred for ease of securing and having maximum features available, but work with what you have.
+There are many ways you can obtain a tenant, it doesn't matter what you choose at the end of the day. If you can access the [Microsoft 365 developer program](https://learn.microsoft.com/en-us/office/developer-program/microsoft-365-developer-program-get-started) do that, otherwise, budget for a licence that contains Entra ID Premium P1 as a feature, at the very least. 
 
-Your administrative account should have a licence, so should any of the accounts you will be allowing threat actors to access.
+Your administrative account should have a licence, as should any of the accounts you will be allowing threat actors to access.
 
 Bare minimum licencing I would suggest for the HoneyAccount would be business basic. Your administrative account should also be mail-enabled, and have the ability to access documents. For the admin account I suggest Business Basic + Entra ID Premium Plan 1 at the very least. Having a P1 licence level on the tenant is highly recommend. Of course, use E5 licencing if you can manage it, so you have as many features available as possible.
 
@@ -148,7 +148,7 @@ Disallow your users from contacting external domains, as well as communicating w
 
 ### Entra Admin Center
 #### Disable Self-Service Password Reset
-If you keep MFA disabled for all your accounts I suggest you also disable SSPR. If you leave SSPR enabled, then you need to register security information if you don't want the threat actors do it for you. If you want to have MFA set up then I suggest you [migrate the authentication methods](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage) so you can granularly control the methods used. These features generally require P1+ licence level to do anything interesting.
+If you keep MFA disabled for all your accounts I suggest you also disable SSPR. If you leave SSPR enabled, then you need to register security information if you don't want the threat actors do it for you. If you want to have MFA set up then I suggest you [migrate the authentication methods](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage) so you can granularly control the methods used. These features generally require P1/P2 licence level to do anything interesting.
 
 #### User Settings
 Under Users > User settings there are some interesting settings that you can adjust. I personally have the settings the following way:
